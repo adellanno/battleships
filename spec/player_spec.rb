@@ -10,7 +10,7 @@ describe Player do
 
   it "raises an error when there's already a ship in that location" do
     subject.place ship
-    expect(subject.place ship).to raise_error 'That place is taken'
+    expect{subject.place ship}.to raise_error 'That place is taken'
   end
 
 
